@@ -1,5 +1,5 @@
 # default.nix
-{ lib, fetchFromGitHub, rustPlatform }:
+{ nativeBuildInputs, buildInputs, lib, fetchFromGitHub, rustPlatform }:
 
 rustPlatform.buildRustPackage rec {
   pname = "idle-game";
